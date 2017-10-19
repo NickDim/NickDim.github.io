@@ -62,8 +62,17 @@ nav ul li{
   padding: 0 15px;
 }
 
+.databaseInfo{
+  display: run-in;
+  padding-bottom: 20px;
+}
+
 .grow{
   flex-grow: 1;
+}
+
+.database{
+  padding-top: 20px;
 }
 
 header .wrapper{

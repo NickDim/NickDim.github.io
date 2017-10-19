@@ -17,7 +17,7 @@
       <nav>
         <ul>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="http://mechate.ch">RoboHobo</a></li>
+          <li><a href="http://mechate.ch">Robotics</a></li>
           <li><a href="https://github.com/NickDim">GitHub</a></li>
         </ul>
       </nav>
@@ -27,7 +27,21 @@
     <div class="wrapper">
       <section id="projects">
         <h1>Projects</h1>
-      </section>
+        <div class="database">
+          <h2>Interactive Database</h2>
+          <p>This is a project that uses MYSQL to connect to, insert into and read from a database.</p>
+          <p>Please fell free to test this out.</p>
+          <div class="databaseInfo">
+            <form name="info" action="infoServlet" method="post">
+              First Name: <input type="text" name="fName">
+              Last Name: <input type="text" name="lName">
+              Email: <input type="text" name="email">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <a href="https://github.com/NickDim/Database">Database Code</a>
+        </div>
+      </div>
     </div>
   </main>
 </body>
