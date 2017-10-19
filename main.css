@@ -1,15 +1,73 @@
-html{
-background-color: #D3D3D3;
+html {
+  background-color: #fff;
 }
-h1{
-  text-align: center;
-  set margin 0;
+
+body {
+  padding: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+  margin: 0;
   color: black;
-  padding-bottom: 50;
 }
-p{
+
+a, a:visited {
+  text-decoration: none;
+}
+
+
+p {
   text-align: left;
-  set margin 0;
   color: black;
-  padding-left: 20;
+}
+
+main{
+  padding-top: 50px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.brand{
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand, .brand:visited{
+  color: black;
+}
+
+.brand img {
+  margin-right: 15px;
+  height: 60px;
+}
+
+nav{
+  font-size: 25px;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
+header .wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
