@@ -1,10 +1,15 @@
 html{
-  padding-left: 50px;
+  padding-top: 25px;
+  padding-left: 150px;
   font-family: 'Titillium Web', sans-serif;
 }
 
 .databaselogo{
   font-size: 13px;
+}
+
+p{
+  padding-bottom: 30px;
 }
 
 .brand{
