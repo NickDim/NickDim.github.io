@@ -14,15 +14,19 @@ footer{
 }
 
 .footer {
+  padding-top: 10px;
   display: flex;
   flex-grow: 1;
-  margin: 0 auto;
+  margin: auto;
+  padding-left: 35%;
+  width: 50%;
 }
 
 .footer p {
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
   color: black;
+  font-weight: 400;
   padding-top: 10px;
   padding-right: 10px;
 }
