@@ -1,7 +1,13 @@
-html{
+body {
   padding-top: 25px;
   padding-left: 150px;
   font-family: 'Titillium Web', sans-serif;
+}
+
+footer{
+  font-family: 'Titillium Web', sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .databaselogo{
