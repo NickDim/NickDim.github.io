@@ -21,6 +21,13 @@ body {
   flex-direction: row;
 }
 
+.wimy {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-family: 'Pacifico', cursive;
+  color: purple;
+}
+
 footer p {
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;

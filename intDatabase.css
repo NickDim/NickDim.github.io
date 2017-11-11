@@ -7,43 +7,39 @@ body {
 .footer{
   background-color: #FF4500;
   position: absolute;
-  bottom: -150px;
+  bottom: -300px;
   left: 0;
   height: 150px;
   width: 100%;
   padding: 40px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
+  padding-top: 190px;
 }
 
 footer p {
+  padding-top: 150px;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
   color: black;
-  padding-top: 400px;
   padding-right: 10px;
 }
 
 footer img {
+  padding-top: 150px;
  height: 30px;
- padding-top: 200px;
-}
-
-.databaselogo{
-  font-size: 13px;
 }
 
 h1{
   font-size: 35px;
 }
 
-p{
+body p{
   padding-bottom: 30px;
 }
 
-.brand{
+body .brand{
   font-size: 2em;
   display: flex;
   align-items: center;
