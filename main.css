@@ -35,8 +35,13 @@ body {
 .wimy {
   padding-top: 50px;
   padding-left: 50px;
+}
+
+.wimy h1 {
   font-family: 'Pacifico', cursive;
+  padding-left: 135px;
   color: rgb(198, 74, 198);
+  font-size: 30px;
 }
 
 footer p {
