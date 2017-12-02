@@ -32,14 +32,19 @@ body {
   padding-top: 30px;
 }
 
-.wimy {
+.intDatabaseTitle {
+  padding-top: 10px;
+}
+
+.wimy-text {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 133px;
   padding-top: 50px;
-  padding-left: 50px;
 }
 
 .wimy h1 {
   font-family: 'Pacifico', cursive;
-  padding-left: 135px;
   color: rgb(198, 74, 198);
   font-size: 30px;
 }
@@ -73,6 +78,7 @@ a, a:visited {
 p {
   text-align: left;
   color: black;
+  line-height: 25px;
 }
 
 main{
