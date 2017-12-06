@@ -25,7 +25,6 @@ body {
 .database {
   padding-top: 50px;
   padding-bottom: 30px;
-  padding-left: 180px;
 }
 
 .databaseInfo {
@@ -125,7 +124,6 @@ nav ul li{
 .grow{
   flex-grow: 1;
 }
-
 
 header .wrapper{
   display: flex;
