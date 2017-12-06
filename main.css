@@ -31,10 +31,6 @@ body {
   padding-top: 30px;
 }
 
-.intDatabaseTitle {
-  padding-top: 10px;
-}
-
 .wimy-text {
   display: flex;
   flex-grow: 1;
