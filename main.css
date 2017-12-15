@@ -8,6 +8,10 @@ body {
   padding: 20px;
 }
 
+header h1 {
+  padding-top: 10px;
+}
+
 .footer{
   background-color: #FF4500;
   position: absolute;
