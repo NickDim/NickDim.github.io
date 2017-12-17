@@ -1,42 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/png" href="assets/nickdim-1.5.png"/>
-    <link rel="icon" type="image/png" href="assets/nickdim-1.5.png"/>
-    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Interactive Database</title>
-  </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <a href="/" class = "brand">
-          <img src="assets/nickdim-1.5.png" alt="NickDim">
-          <h1>Interactive Database</h1>
-        </a>
-      </div>
-    </header>
-    <main>
-      <div class="database wrapper">
-        <p>This is a project that uses MYSQL to connect to, insert into and read from a database.</p>
-        <p>Please feel free to test this out and keep in mind that if you do put your email, I may send you emails testing my sendgrid client however this is optional.</p>
-        <div class="databaseInfo">
-          <form name="info" action="http://intdbapi.nickdim.me/users/" method="post">
-            <input type="text" name="fName" placeholder="First Name" aria-label="First Name">
-            <input type="text" name="lName" placeholder="Last Name" aria-label="Last Name">
-            <input type="text" name="email" placeholder="Email Address" aria-label="Email Address">
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer">
-        <p>Made by NickDim</p>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="assets/nickdim-1.5.png"/>
+  <link rel="icon" type="image/png" href="assets/nickdim-1.5.png"/>
+  <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Interactive Database</title>
+</head>
+<body class="database-web">
+  <header>
+    <div class="wrapper">
+      <a href="/" class = "brand">
         <img src="assets/nickdim-1.5.png" alt="NickDim">
+        <h1>Interactive Database</h1>
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="database wrapper">
+      <p>This is a project that uses MYSQL to connect to, insert into and read from a database.</p>
+      <p>Please feel free to test this out and keep in mind that if you do put your email, I may send you emails testing my sendgrid client however this is optional.</p>
+      <div class="databaseInfo">
+        <form name="info" action="http://localhost:4567/users" method="post">
+          <input type="text" name="fName" placeholder="First Name" aria-label="First Name">
+          <input type="text" name="lName" placeholder="Last Name" aria-label="Last Name">
+          <input type="text" name="email" placeholder="Email Address" aria-label="Email Address">
+          <input type="submit" value="Submit">
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>First Name</td>
+              <td>Last Name</td>
+            </tr>
+          </thead>
+          <tbody id="databaseBody">
+          </tbody>
+        </table>
       </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>Made by NickDim</p>
+      <img src="assets/nickdim-1.5.png" alt="NickDim">
+    </div>
+  </footer>
+  <script type="text/javascript">
+  const table = document.querySelector("#databaseBody");
+  fetch("http://localhost:4567/users").then((response) => {
+    return response.json();
+  }).then((users) => {
+    users.forEach((user) => {
+      console.log(user);
+      const row = document.createElement("tr");
+      const idCell = document.createElement("td");
+      const fNameCell = document.createElement("td");
+      const lNameCell = document.createElement("td");
+
+      idCell.textContent = user.PK;
+      fNameCell.textContent = user.fName;
+      lNameCell.textContent = user.lName;
+
+      row.appendChild(idCell);
+      row.appendChild(fNameCell);
+      row.appendChild(lNameCell);
+
+      table.appendChild(row);
+
+    });
+  });
+  </script>
+</body>
 </html>
